@@ -6,12 +6,17 @@ body {
     font-family: "Inter";
     font-style: normal;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 .top-header {
     background-color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
     display: flex;
+
     justify-content: space-between;
     padding-inline: 100px;
     padding-block: 30px;
@@ -261,21 +266,6 @@ input[type="submit"] {
 
 .footer-col {
     flex: 2 1 1;
-}
-.footer-column h4,
-.footer-column h5 {
-    margin-bottom: 10px;
-}
-
-.footer-column p,
-.footer-column a,
-.footer-column li {
-    margin-bottom: 8px;
-}
-
-.footer-column a {
-    color: #000;
-    text-decoration: none;
 }
 
 .footer-nav {

@@ -8,14 +8,66 @@
         />
         <title>Site de Nina Carducci - photographe à Bordeaux</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
-        <link rel="stylesheet" href="./assets/style.css" />
+        <meta
+            property="og:title"
+            content="Nina Carducci - photographe à Bordeaux"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.ninacarducci.fr" />
+        <meta
+            property="og:image"
+            content="https://www.ninacarducci.fr/assets/images/Images-Optimisés-pour-le-Web-version-Webp/nina.webp"
+        />
+        <meta
+            property="og:site_name"
+            content="Site de Nina Carducci - photographe à Bordeaux"
+        />
+        <meta
+            property="og:description"
+            content="Photographe à Bordeaux, Nina Carducci capture vos moments forts à travers des portraits, mariages et reportages."
+        />
+        <meta property="og:locale" content="fr_FR" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Nina Carducci - photographe à Bordeaux"
+        />
+        <meta
+            name="twitter:description"
+            content="Photographe à Bordeaux, spécialisée en portraits, mariages et événements."
+        />
+        <meta
+            name="twitter:image"
+            content="https://www.ninacarducci.fr/assets/images/Images-Optimisés-pour-le-Web-version-Webp/nina.webp"
+        />
+        <link
+            rel="preload"
+            href="./assets/bootstrap/bootstrap.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet';"
+        />
+        <noscript>
+            <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+        </noscript>
+        <link rel="stylesheet" href="./assets/style.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="preload"
+            as="style"
+            href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+            media="print"
+            onload="this.media='all'"
+        />
         <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"
+            defer
         ></script>
         <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
         <script src="./assets/maugallery.min.js" defer></script>
@@ -25,17 +77,14 @@
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 "name": "Nina Carducci",
-                "image": "https://www.ninacarducci.fr/assets/images/nina.jpg",
+                "image": "https://www.ninacarducci.fr/assets/images/Images-Optimisés-pour-le-Web-version-Webp/nina.webp",
                 "description": "Photographe professionnelle à Bordeaux spécialisée dans les portraits, les mariages et les séances personnalisées.",
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "68 avenue Alsace-Lorraine",
                     "addressLocality": "Bordeaux",
                     "postalCode": "33200",
-                    "addressCountry": {
-                        "@type": "Country",
-                        "name": "FRANCE"
-                    }
+                    "addressCountry": "FR"
                 },
                 "telephone": "+33556677889",
                 "url": "https://www.ninacarducci.fr",
@@ -45,8 +94,11 @@
                     "latitude": "44.837789",
                     "longitude": "-0.57918"
                 },
-                "sameAs": "https://www.instagram.com/ninacarducci.photo/?hl=fr",
-                "priceRange": "€€"
+                "sameAs": [
+                    "https://www.instagram.com/nina.photo",
+                    "https://www.facebook.com/nina.photo"
+                ],
+                "priceRange": "€"
             }
         </script>
     </head>
@@ -286,7 +338,12 @@
                             </p>
                         </div>
                         <div class="service__price">
-                            <h4>350€/demi journée</h4>
+                            <h4>
+                                <meta
+                                    itemprop="priceRange"
+                                    content="EUR"
+                                />350€/demi journée
+                            </h4>
                             <span>Matériel, déplacement inclus</span>
                         </div>
                     </div>
@@ -300,7 +357,12 @@
                             </p>
                         </div>
                         <div class="service__price">
-                            <h4>50€/photo</h4>
+                            <h4>
+                                <meta
+                                    itemprop="priceRange"
+                                    content="EUR"
+                                />50€/photo
+                            </h4>
                             <span>2 AR par photo</span>
                         </div>
                     </div>
@@ -314,7 +376,10 @@
                             </p>
                         </div>
                         <div class="service__price">
-                            <h4>400€ album A4</h4>
+                            <h4>
+                                <meta itemprop="priceRange" content="EUR" />400€
+                                album A4
+                            </h4>
                             <span>30 pages recto/verso</span>
                         </div>
                     </div>
@@ -428,19 +493,16 @@
                                     >68 avenue Alsace-Lorraine</span
                                 >,
                                 <span itemprop="postalCode">33200</span>
-                                <span
-                                    itemprop="addressLocality"
-                                    itelprop="addressCountry"
-                                    >Bordeaux - FRANCE</span
-                                >
+                                <span itemprop="addressLocality">Bordeaux</span>
+                                <span itemprop="addressCountry">FR</span>
                             </p>
                         </div>
-                        <p>
-                            <strong>Tél :</strong>
-                            <a itemprop="telephone" href="tel:+33556677889"
-                                >05 56 67 78 89</a
-                            >
-                        </p>
+                        <div itemprop="telephone" content="+33556677889">
+                            <p>
+                                <strong>Tél :</strong>
+                                <a href="tel:+33556677889">05 56 67 78 89</a>
+                            </p>
+                        </div>
                         <p>
                             <strong>Email :</strong>
                             <a href="mailto:contact@ninacarducci.fr"
