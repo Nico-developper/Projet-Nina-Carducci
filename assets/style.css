@@ -16,6 +16,7 @@ body {
     padding-inline: 100px;
     padding-block: 30px;
     align-items: center;
+    width: 100%;
 }
 
 .top-header .name {
@@ -27,6 +28,7 @@ body {
     list-style-type: none;
     font-size: 14px;
     margin-bottom: 0;
+    width: auto;
 }
 
 .nav li {
@@ -40,6 +42,7 @@ body {
 
 .social-link img {
     width: 20px;
+    height: auto;
 }
 
 #about {
@@ -48,6 +51,7 @@ body {
     padding-inline: 100px;
     padding-block: 100px;
     position: relative;
+    width: 100%;
 }
 
 .picture.left::before {
@@ -65,10 +69,12 @@ body {
     flex: 1;
     margin: 0 20px;
     z-index: 0;
+    width: 100%;
 }
 
 .picture img {
     width: 100%;
+    height: auto;
 }
 #about-me {
     flex: 2;
@@ -83,10 +89,12 @@ body {
     font-weight: 800;
     font-style: italic;
     width: 60%;
+    text-align: justify;
 }
 #about-me p {
     width: 80%;
     font-size: 14px;
+    text-align: justify;
 }
 
 #gallery {
@@ -101,7 +109,7 @@ body {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-    color: #fff;
+    color: #000;
     background-color: #beb45a;
     border-radius: 0;
 }
@@ -239,4 +247,79 @@ form textarea {
 input[type="submit"] {
     background-color: #beb45a;
     padding: 0.5em 1em;
+}
+.footer {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    font-size: 0.95rem;
+    border-top: 1px solid #ccc;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.footer-col {
+    flex: 2 1 1;
+}
+.footer-column h4,
+.footer-column h5 {
+    margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column a,
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-nav li {
+    margin-bottom: 5px;
+}
+.footer a {
+    text-decoration: none;
+    color: #000;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+    font-size: 0.85rem;
+}
+
+.footer-bottom a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+.footer img {
+    width: 20px;
+    height: auto;
 }
